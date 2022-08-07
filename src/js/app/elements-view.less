@@ -1,0 +1,82 @@
+@import "variables";
+
+elements-view {
+  display: block;
+}
+
+.elements-view__ctrls {
+  padding: 10px;
+  border-bottom: 1px solid @c-gray;
+}
+
+hr {
+  height: 1px;
+  background: #aaaaaa;
+  margin: 0;
+  border: 0;
+}
+
+.left_block_button {
+  padding: 24px;
+}
+
+.button {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #222222;
+  border-radius: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: #dddddd;
+  border: 2px solid #aaaaaa;
+  transition: 0.5s;
+}
+
+.item_block {
+  height: 32px;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.item_block:hover {
+  background: #dddddd;
+}
+.item_block:hover .square {
+  display: inline;
+}
+
+p {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222222;
+  line-height: 22px;
+  margin: 0 12px 0 0;
+  float: left;
+}
+
+.amount_item {
+  text-overflow: ellipsis;
+}
+
+.square {
+  display: none;
+  min-width: 20px;
+  min-height: 20px;
+  background: #aaaaaa;
+  margin-left: auto;
+}

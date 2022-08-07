@@ -1,0 +1,19 @@
+<div>
+  <p>Selected:{{aboutTitle.title}}</p>
+  <br/>
+Tags:
+<hr/>
+<div class="amount-tags"> 
+  <div class="tag" ng-repeat="aboutTit in aboutTitle.tags track by $index">
+  {{aboutTit}}
+  <button ng-click="deleteTag()" class="x-button">x</button>
+  <hr />
+</div>
+</div>
+  
+
+  <br />
+  New tag
+  <input ng-model="nameTag" type="text" />
+  <button ng-click="addTag()">Add</button>
+</div>

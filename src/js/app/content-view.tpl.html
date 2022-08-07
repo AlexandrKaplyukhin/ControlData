@@ -1,0 +1,28 @@
+<some-1></some-1>
+Order:
+<select ng-model="data.singleSelect" ng-change="changeSort()">
+  <option value="selectTitle">Title</option>
+  <option value="selectDate">Date</option>
+</select>
+
+<br />
+Only date
+<input type="checkbox" ng-model="valueData" ng-change="changeView()" />
+<br />
+Search
+<input ng-model="changeS.title" type="text" />
+<hr style="margin-top: 1em" />
+
+<div class="array-of-obj" ng-click="abouteTitle(message)" ng-repeat="message in messages | orderBy:propertyName | filter:changeS">
+  <p>Title: {{message.title}}</p>
+  <br />
+  <p>Date: {{message.date | date: dateWithTime}}</p>
+  <br />
+  <hr />
+  
+</div>
+
+<br />
+New title
+<input ng-model="nameItem" type="text" />
+<button ng-click="addItem()" >Add</button>
